@@ -1,10 +1,7 @@
 package com.example.android.tourguideapp;
 
 
-import android.content.Context;
 import android.content.Intent;
-import android.media.AudioManager;
-import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -55,7 +52,7 @@ public class ColorsFragment extends Fragment {
                 // Get the {@link Word} object at the given position the user clicked on
                 Word word = words.get(position);
 
-                Intent Content = new Intent(getActivity(), Content.class);
+                Intent Content = new Intent(getActivity(), ContentActivity.class);
                 //Content.putExtra("Song_Name", songName.getText());
                 //Content.putExtra("Song_Artist", songArtist.getText());
                 //Content.putExtra("Song_Album", songAlbum.getText());
