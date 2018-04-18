@@ -3,7 +3,6 @@ package com.example.android.tourguideapp;
 import android.app.Activity;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,8 +18,8 @@ import java.util.ArrayList;
 
 
 
-    public class WordAdapter extends ArrayAdapter<Word> {
-    private static final String LOG_TAG = WordAdapter.class.getSimpleName();
+    public class PlaceAdapter extends ArrayAdapter<Place> {
+    private static final String LOG_TAG = PlaceAdapter.class.getSimpleName();
 
     /** Resource ID for the background color for this list of words */
     private int mColorResourceId;
@@ -32,14 +31,14 @@ import java.util.ArrayList;
      * to populate into the lists.
      *
      * @param context        The current context. Used to inflate the layout file.
-     * @param words A List of AndroidFlavor objects to display in a list
+     * @param places A List of AndroidFlavor objects to display in a list
      */
-    public WordAdapter(Activity context, ArrayList<Word> words , int color) {
+    public PlaceAdapter(Activity context, ArrayList<Place> places, int color) {
         // Here, we initialize the ArrayAdapter's internal storage for the context and the list.
         // the second argument is used when the ArrayAdapter is populating a single TextView.
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
-        super(context, 0, words);
+        super(context, 0, places);
         mColorResourceId = color;
     }
 
@@ -54,20 +53,20 @@ import java.util.ArrayList;
         }
 
         // Get the {@link AndroidFlavor} object located at this position in the list
-        Word currentWord = getItem(position);
+        Place currentPlace = getItem(position);
 
         // Find the TextView in the list_item.xml layout with thedefault language
         TextView numberTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
         // Get the version number from the current word object and
         // set this text on the number TextView
-        numberTextView.setText(currentWord.getDefaultTranslation());
+        numberTextView.setText(currentPlace.getDefaultTranslation());
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.image);
         // Check if an image is provided for this word or not
-        if (currentWord.hasImage()) {
+        if (currentPlace.hasImage()) {
             // If an image is available, display the provided image based on the resource ID
-            iconView.setImageResource(currentWord.getMiwokImage());
+            iconView.setImageResource(currentPlace.getMiwokImage());
             // Make sure the view is visible
             iconView.setVisibility(View.VISIBLE);
         } else {

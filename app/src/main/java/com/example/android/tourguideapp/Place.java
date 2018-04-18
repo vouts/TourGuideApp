@@ -6,7 +6,7 @@ import android.content.Context;
  * Created by Stelios on 2/24/2018.
  */
 
-public class Word {
+public class Place {
 
     /**
      * Constant value that represents no image was provided for this word
@@ -24,38 +24,24 @@ public class Word {
 
     private int mImageResourceId = NO_IMAGE_PROVIDED;
 
-    private int mSongResourceId;
 
 
 
 
 
-    /**
-     * Create a new Word object.
-     *
-     * @param defaultTranslation is the word in a language that the user is already familiar with
-     *                           (such as English)
-     * @param miwokTranslation   is the word in the Miwok language
-     */
-    public Word(String defaultTranslation, String miwokTranslation, int songId ) {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
-        mSongResourceId = songId;
-    }
 
     /**
-     * Create a new Word object.
+     * Create a new Place object.
      *
      * @param defaultTranslation is the word in a language that the user is already familiar with
      *                           (such as English)
      * @param miwokTranslation   is the word in the Miwok language
      * @param resourceId         contains the desired image
      */
-    public Word( String defaultTranslation, String miwokTranslation, int songId, int resourceId) {
+    public Place(String defaultTranslation, String miwokTranslation, int resourceId) {
         mDefaultTranslation = defaultTranslation;
         mMiwokTranslation = miwokTranslation;
         mImageResourceId = resourceId;
-        mSongResourceId = songId;
     }
 
     /**

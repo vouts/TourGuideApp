@@ -29,17 +29,17 @@ public class ColorsFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.word_list, container, false);
 
 
-        final ArrayList<Word> words = new ArrayList<Word>();
-        words.add(new Word("red", "weṭeṭṭi", R.raw.color_red, R.drawable.hotel));
-        words.add(new Word("green", "chokokki", R.raw.color_green, R.drawable.hotel));
-        words.add(new Word("brown", "ṭakaakki", R.raw.color_brown, R.drawable.hotel));
-        words.add(new Word("gray", "ṭopoppi", R.raw.color_gray, R.drawable.hotel));
-        words.add(new Word("black", "kululli", R.raw.color_black, R.drawable.hotel));
-        words.add(new Word("white", "kelelli", R.raw.color_white, R.drawable.acropolis));
-        words.add(new Word("dusty yellow", "ṭopiisә", R.raw.color_dusty_yellow, R.drawable.hotel));
-        words.add(new Word("mustard yellow", "chiwiiṭә", R.raw.color_mustard_yellow, R.drawable.hotel));
+        final ArrayList<Place> places = new ArrayList<Place>();
+        places.add(new Place("red", "weṭeṭṭi",  R.drawable.hotel));
+        places.add(new Place("green", "chokokki",  R.drawable.hotel));
+        places.add(new Place("brown", "ṭakaakki",  R.drawable.hotel));
+        places.add(new Place("gray", "ṭopoppi", R.drawable.hotel));
+        places.add(new Place("black", "kululli",  R.drawable.hotel));
+        places.add(new Place("white", "kelelli", R.drawable.acropolis));
+        places.add(new Place("dusty yellow", "ṭopiisә", R.drawable.hotel));
+        places.add(new Place("mustard yellow", "chiwiiṭә",  R.drawable.hotel));
 
-        WordAdapter itemsAdapter = new WordAdapter(getActivity(), words, R.color.mainBG);
+        PlaceAdapter itemsAdapter = new PlaceAdapter(getActivity(), places, R.color.mainBG);
 
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
@@ -49,8 +49,8 @@ public class ColorsFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                // Get the {@link Word} object at the given position the user clicked on
-                Word word = words.get(position);
+                // Get the {@link Place} object at the given position the user clicked on
+                Place place = places.get(position);
 
                 Intent Content = new Intent(getActivity(), ContentActivity.class);
                 //Content.putExtra("Song_Name", songName.getText());
