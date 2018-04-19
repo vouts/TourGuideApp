@@ -49,5 +49,12 @@
         <item name="app:civ_border_color">@color/imageBorder</item>
         <item name="app:civ_border_width">@dimen/imageBorder</item>
     </style>
+    <style name="ListItemText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+    <!-- End of List Item -->
 
 </resources>
