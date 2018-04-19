@@ -1,9 +1,5 @@
 package com.example.android.tourguideapp;
 
-import android.content.Context;
-
-import com.google.android.gms.maps.model.LatLng;
-
 /**
  * Created by Stelios on 2/24/2018.
  */
