@@ -1,8 +1,12 @@
 package com.example.android.tourguideapp;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -43,7 +47,43 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
 
+        TextView nameView = findViewById(R.id.placeName);
+        nameView.setText(placeName);
 
+        TextView descriptionView = findViewById(R.id.placeDescription);
+        descriptionView.setText(placeDescription);
+
+        TextView addressView = findViewById(R.id.placeAddress);
+        addressView.setText(placeAddress);
+
+        TextView phoneView = findViewById(R.id.placePhone);
+        phoneView.setText(placePhone);
+
+        TextView websiteView = findViewById(R.id.placeWebsite);
+        websiteView.setText(placeWebsite);
+
+        ImageView imageView = findViewById(R.id.placeImage);
+        imageView.setImageResource(placeImage);
+
+
+        phoneView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent phoneCall = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + placePhone));
+                    startActivity(phoneCall);
+
+            }
+        });
+
+        websiteView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent openWebsite = new Intent(Intent.ACTION_VIEW));
+        openWebsite.setData(Uri.parse(placeWebsite));
+                startActivity(openWebsite);
+
+            }
+        });
 
     }
 

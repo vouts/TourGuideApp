@@ -8,6 +8,7 @@
          location permissions for the 'MyLocation' functionality. 
     -->
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -36,7 +37,7 @@
         <activity
             android:name=".ContentActivity"
             android:label="@string/title_activity_content"
-            android:parentActivityName="com.example.android.tourguideapp.MainActivity"/>
+            android:parentActivityName="com.example.android.tourguideapp.MainActivity" />
     </application>
 
 </manifest>
