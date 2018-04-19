@@ -2,6 +2,8 @@ package com.example.android.tourguideapp;
 
 import android.content.Context;
 
+import com.google.android.gms.maps.model.LatLng;
+
 /**
  * Created by Stelios on 2/24/2018.
  */
@@ -12,17 +14,36 @@ public class Place {
      * Constant value that represents no image was provided for this word
      */
     private static final int NO_IMAGE_PROVIDED = -1;
-    /**
-     * Default translation for the word
-     */
-    private String mDefaultTranslation;
 
     /**
-     * Miwok translation for the word
+     * Name of the place
      */
-    private String mMiwokTranslation;
+    private String placeName;
 
-    private int mImageResourceId = NO_IMAGE_PROVIDED;
+    /**
+     * Phone number of the place
+     */
+    private String placePhone;
+
+    /**
+     * Webiste of the place
+     */
+    private String placeWebsite;
+
+    /**
+     * Small description of the place
+     */
+    private String placeDescription;
+    /**
+     * Location of the place
+     */
+    double placeLatitude;
+    double placeLongitude;
+
+    /**
+     *  Image of the place
+     */
+    private int placeImage = NO_IMAGE_PROVIDED;
 
 
 
@@ -48,28 +69,36 @@ public class Place {
      * Returns whether or not there is an image for this word.
      */
     public boolean hasImage() {
-        return mImageResourceId != NO_IMAGE_PROVIDED;
+        return placeImage != NO_IMAGE_PROVIDED;
     }
 
     /**
-     * Get the default translation of the word.
+     * Get the name of the place.
      */
-    public String getDefaultTranslation() {
-        return mDefaultTranslation;
+    public String getPlaceName() {
+        return placeName;
     }
 
     /**
-     * Get the Miwok translation of the word.
+     * Get the description of the place.
      */
-    public String getMiwokTranslation() {
-        return mMiwokTranslation;
+    public String getPlaceDescription() {
+        return placeDescription;
     }
+
+    /**
+     * Get the phone of the place.
+     */
+    public String getPlacePhone() {
+        return placePhone;
+    }
+
 
     /**
      * Get the Miwok image.
      */
-    public int getMiwokImage() {
-        return mImageResourceId;
+    public int getPlaceImage() {
+        return placeImage;
     }
 
 

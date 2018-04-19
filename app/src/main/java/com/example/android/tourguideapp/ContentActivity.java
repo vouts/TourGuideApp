@@ -14,6 +14,11 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
 
     private GoogleMap mMap;
 
+    private LatLng Location(double latitude, double longitude) {
+        LatLng location = new LatLng(latitude, longitude);
+        return location;
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,8 +47,8 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
         mMap = googleMap;
 
         // Add a marker in Sydney and move the camera
-        LatLng sydney = new LatLng(-34, 151);
-        mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+
+        mMap.addMarker(new MarkerOptions().position(Location(34,34)).title("Marker in Sydney"));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(Location(34,34)));
     }
 }
