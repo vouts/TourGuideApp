@@ -28,11 +28,11 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
         if (position == 0) {
             return new HotelsFragment();
         } else if (position == 1){
-            return new HotelsFragment();
+            return new BarsFragment();
         } else if (position == 2){
-            return new HotelsFragment();
+            return new RestaurantsFragment();
         } else {
-            return new HotelsFragment();
+            return new AtractionsFragment();
         }
     }
 
