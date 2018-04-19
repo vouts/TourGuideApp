@@ -30,17 +30,21 @@ public class HotelsFragment extends Fragment {
 
 
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
 
 
         PlaceAdapter itemsAdapter = new PlaceAdapter(getActivity(), places, R.color.mainBG);

@@ -1,5 +1,9 @@
 <resources>
     <string name="app_name">Athens Tour Guide</string>
     <string name="title_activity_content">Details</string>
-    <string name="demoDetails">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat ullamcorper gravida. Vivamus malesuada vitae quam at auctor. Phasellus nec interdum ligula, eget rhoncus ipsum.</string>
+    <string name="place_title">Flying Coffe Bean</string>
+    <string name="place_address">Agias Sofias 5</string>
+    <string name="place_phone">+302103478588</string>
+    <string name="place_website">vouts.tk</string>
+    <string name="place_description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent placerat ullamcorper gravida. Vivamus malesuada vitae quam at auctor. Phasellus nec interdum ligula, eget rhoncus ipsum.</string>
 </resources>
