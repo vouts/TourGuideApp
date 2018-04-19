@@ -34,5 +34,20 @@
     <!-- End of Main Activity -->
 
     <!-- Begin of List Item -->
+    <style name="ListItemContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/listItemMarginTop</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="CircleImage">
+        <item name="android:layout_width">@dimen/circleImageSize</item>
+        <item name="android:layout_height">@dimen/circleImageSize</item>
+        <item name="android:layout_margin">@dimen/circleImageMargin</item>
+        <item name="android:layout_marginLeft">@dimen/circleImageMarginLeft</item>
+        <item name="app:civ_border_color">@color/imageBorder</item>
+        <item name="app:civ_border_width">@dimen/imageBorder</item>
+    </style>
 
 </resources>
