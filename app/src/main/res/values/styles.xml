@@ -64,4 +64,9 @@
     </style>
     <!-- End of Place List -->
 
+    <!-- Begin of Content Activity -->
+    <style name="ContentContainer">
+
+    </style>
+
 </resources>

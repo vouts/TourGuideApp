@@ -47,7 +47,6 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
 
     }
 
-
     /**
      * Manipulates the map once available.
      * This callback is triggered when the map is ready to be used.
@@ -63,7 +62,7 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
 
         // Add a marker in Sydney and move the camera
 
-        mMap.addMarker(new MarkerOptions().position(location(34,34)).title("Marker in Sydney"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(location(34,34)));
+        mMap.addMarker(new MarkerOptions().position(location(placeLatitude,placeLongitude)).title(placeName));
+        mMap.moveCamera(CameraUpdateFactory.newLatLng(location(placeLatitude,placeLongitude)));
     }
 }
