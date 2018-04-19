@@ -30,14 +30,14 @@ public class HotelsFragment extends Fragment {
 
 
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place("red", "weṭeṭṭi",  R.drawable.hotel));
-        places.add(new Place("green", "chokokki",  R.drawable.hotel));
-        places.add(new Place("brown", "ṭakaakki",  R.drawable.hotel));
-        places.add(new Place("gray", "ṭopoppi", R.drawable.hotel));
-        places.add(new Place("black", "kululli",  R.drawable.hotel));
-        places.add(new Place("white", "kelelli", R.drawable.acropolis));
-        places.add(new Place("dusty yellow", "ṭopiisә", R.drawable.hotel));
-        places.add(new Place("mustard yellow", "chiwiiṭә",  R.drawable.hotel));
+        //places.add(new Place("red", "weṭeṭṭi",  R.drawable.hotel));
+        //places.add(new Place("green", "chokokki",  R.drawable.hotel));
+        //places.add(new Place("brown", "ṭakaakki",  R.drawable.hotel));
+        //places.add(new Place("gray", "ṭopoppi", R.drawable.hotel));
+        //places.add(new Place("black", "kululli",  R.drawable.hotel));
+       // places.add(new Place("white", "kelelli", R.drawable.acropolis));
+        //places.add(new Place("dusty yellow", "ṭopiisә", R.drawable.hotel));
+        //places.add(new Place("mustard yellow", "chiwiiṭә",  R.drawable.hotel));
 
         PlaceAdapter itemsAdapter = new PlaceAdapter(getActivity(), places, R.color.mainBG);
 
@@ -57,6 +57,10 @@ public class HotelsFragment extends Fragment {
                 Content.putExtra("Place_Description", place.getPlaceDescription());
                 Content.putExtra("Place_Address", place.getPlaceAddress());
                 Content.putExtra("Place_Phone", place.getPlacePhone());
+                Content.putExtra("Place_Website", place.getPlaceWebsite());
+                Content.putExtra("Place_Latitude", place.getPlaceLatitude());
+                Content.putExtra("Place_Longitude", place.getPlaceLongitude());
+                Content.putExtra("Place_Image", place.getPlaceImage());
                 //Content.putExtra("Song_Album", songAlbum.getText());
                 //Content.putExtra("Album_Cover", albumCover.getText().toString());
                 startActivity(Content);
