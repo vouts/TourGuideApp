@@ -16,4 +16,6 @@
     <dimen name="contentImageMaxHeight">200dp</dimen>
     <dimen name="contentDescriptionMarginTop">10dp</dimen>
     <dimen name="contentTextSize">18sp</dimen>
+    <dimen name="contentTextViewMarginTop">10dp</dimen>
+    <dimen name="contentTextViewDrawablePadding">4dp</dimen>
 </resources>
