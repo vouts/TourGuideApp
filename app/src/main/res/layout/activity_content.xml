@@ -4,37 +4,22 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:id="@+id/contentWrapper"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp"
-    android:layout_marginTop="10dp"
+    style="@style/ContentContainer"
     tools:context=".ContentActivity">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        style="@style/ContentMainLinearLayout">
 
         <fragment
             android:id="@+id/map"
             android:name="com.google.android.gms.maps.SupportMapFragment"
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginLeft="16dp"
-            android:layout_marginRight="16dp"
-            android:layout_marginTop="10dp"
+            style="@style/MapsFragment"
             tools:context=".ContentActivity" />
 
         <TextView
             android:id="@+id/placeName"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center_horizontal"
-            android:text="Flying Coffee Bean"
-            android:textColor="@color/textColor"
-            android:textSize="24sp" />
+            style="@style/ContentTitle"
+            android:text="Flying Coffee Bean" />
 
         <ImageView
             android:id="@+id/placeImage"
@@ -42,7 +27,6 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:adjustViewBounds="true"
-
             android:maxHeight="200dp"
             android:src="@drawable/acropolis" />
 
@@ -54,7 +38,7 @@
             android:gravity="center_horizontal"
             android:text="@string/demoDetails"
             android:textColor="@color/textColor"
-            android:textSize="24sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/placeAddress"

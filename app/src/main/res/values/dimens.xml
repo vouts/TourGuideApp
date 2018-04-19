@@ -7,4 +7,9 @@
     <dimen name="circleImageMarginLeft">5dp</dimen>
     <dimen name="contentContainerMarginSides">16dp</dimen>
     <dimen name="contentContainerMarginTop">10dp</dimen>
+    <dimen name="mapHeight">150dp</dimen>
+    <dimen name="mapMarginSides">16dp</dimen>
+    <dimen name="mapMarginTop">10dp</dimen>
+    <dimen name="contentTitleMarginTop">10dp</dimen>
+    <dimen name="contentTitleTextSize">24sp</dimen>
 </resources>

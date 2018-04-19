@@ -66,7 +66,32 @@
 
     <!-- Begin of Content Activity -->
     <style name="ContentContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/contentContainerMarginSides</item>
+        <item name="android:layout_marginRight">@dimen/contentContainerMarginSides</item>
+        <item name="android:layout_marginTop">@dimen/contentContainerMarginTop</item>
+    </style>
+    <style name="ContentMainLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <style name="MapsFragment">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/mapHeight</item>
+        <item name="android:layout_marginLeft">@dimen/mapMarginSides</item>
+        <item name="android:layout_marginRight">@dimen/mapMarginSides</item>
+        <item name="android:layout_marginTop">@dimen/mapMarginTop</item>
+    </style>
 
+    <style name="ContentTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_marginTop">@dimen/contentTitleMarginTop</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/contentTitleTextSize</item>
     </style>
 
 </resources>
