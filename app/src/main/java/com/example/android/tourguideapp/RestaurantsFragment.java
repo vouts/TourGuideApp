@@ -17,42 +17,37 @@ import java.util.ArrayList;
  */
 public class RestaurantsFragment extends Fragment {
 
-
     public RestaurantsFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.place_list, container, false);
 
-
         final ArrayList<Place> places = new ArrayList<Place>();
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address),  getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
-
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place(getString(R.string.place_title), getString(R.string.place_description), getString(R.string.place_address), getString(R.string.place_address), getString(R.string.place_website), 37.9661, 23.7006, R.drawable.acropolis));
 
         PlaceAdapter itemsAdapter = new PlaceAdapter(getActivity(), places, R.color.mainBG);
 
         ListView listView = rootView.findViewById(R.id.list);
 
         listView.setAdapter(itemsAdapter);
-
 
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

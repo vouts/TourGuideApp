@@ -9,7 +9,7 @@
         android:id="@+id/image"
         style="@style/CircleImage"
         app:civ_border_color="@color/imageBorder"
-        app:civ_border_width="@dimen/imageBorder"/>
+        app:civ_border_width="@dimen/imageBorder" />
 
     <TextView
         android:id="@+id/name_text_view"

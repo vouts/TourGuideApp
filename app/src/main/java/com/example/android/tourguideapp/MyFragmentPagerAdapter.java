@@ -24,9 +24,9 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     public Fragment getItem(int position) {
         if (position == 0) {
             return new HotelsFragment();
-        } else if (position == 1){
+        } else if (position == 1) {
             return new BarsFragment();
-        } else if (position == 2){
+        } else if (position == 2) {
             return new RestaurantsFragment();
         } else {
             return new AtractionsFragment();
@@ -46,9 +46,9 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
         Drawable drawable;
         if (position == 0) {
             drawable = thisContext.getResources().getDrawable(R.drawable.hotel);
-        } else if (position == 1){
+        } else if (position == 1) {
             drawable = thisContext.getResources().getDrawable(R.drawable.bar);
-        }  else if (position == 2){
+        } else if (position == 2) {
             drawable = thisContext.getResources().getDrawable(R.drawable.food);
         } else {
             drawable = thisContext.getResources().getDrawable(R.drawable.pillar);

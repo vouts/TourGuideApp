@@ -1,12 +1,8 @@
 package com.example.android.tourguideapp;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
@@ -41,7 +37,7 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
         placeAddress = intent.getStringExtra("Place_Address");
         placePhone = intent.getStringExtra("Place_Phone");
         placeWebsite = intent.getStringExtra("Place_Website");
-        placeLatitude = intent.getDoubleExtra("Place_Latitude",37.9715323);
+        placeLatitude = intent.getDoubleExtra("Place_Latitude", 37.9715323);
         placeLongitude = intent.getDoubleExtra("Place_Longitude", 23.7257492);
         placeImage = intent.getIntExtra("Place_Image", R.drawable.acropolis);
 
@@ -75,7 +71,7 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
             public void onClick(View v) {
                 Intent phoneCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + placePhone));
 
-                    startActivity(phoneCall);
+                startActivity(phoneCall);
 
             }
         });
@@ -84,7 +80,7 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
             @Override
             public void onClick(View v) {
                 Intent openWebsite = new Intent(Intent.ACTION_VIEW);
-        openWebsite.setData(Uri.parse("http://" + placeWebsite));
+                openWebsite.setData(Uri.parse("http://" + placeWebsite));
                 startActivity(openWebsite);
 
             }
@@ -105,9 +101,7 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
     public void onMapReady(GoogleMap googleMap) {
         Map = googleMap;
 
-
-
-        Map.addMarker(new MarkerOptions().position(location(placeLatitude,placeLongitude)).title(placeName));
-        Map.moveCamera(CameraUpdateFactory.newLatLng(location(placeLatitude,placeLongitude)));
+        Map.addMarker(new MarkerOptions().position(location(placeLatitude, placeLongitude)).title(placeName));
+        Map.moveCamera(CameraUpdateFactory.newLatLng(location(placeLatitude, placeLongitude)));
     }
 }
