@@ -13,6 +13,10 @@ import com.google.android.gms.maps.model.MarkerOptions;
 public class ContentActivity extends AppCompatActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
+    private String placeName, placeDescription, placeAddress, placePhone, placeWebsite;
+    private double placeLatitude, placeLongitude;
+    private int placeImage;
+    private boolean placeHasImage;
 
     private LatLng location(double latitude, double longitude) {
         LatLng location = new LatLng(latitude, longitude);

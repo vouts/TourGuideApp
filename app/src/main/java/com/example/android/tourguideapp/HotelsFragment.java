@@ -60,6 +60,7 @@ public class HotelsFragment extends Fragment {
                 Content.putExtra("Place_Website", place.getPlaceWebsite());
                 Content.putExtra("Place_Latitude", place.getPlaceLatitude());
                 Content.putExtra("Place_Longitude", place.getPlaceLongitude());
+                Content.putExtra("Place_Has_Image", place.hasImage());
                 Content.putExtra("Place_Image", place.getPlaceImage());
                 startActivity(Content);
 
