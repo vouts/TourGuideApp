@@ -46,9 +46,8 @@
         <item name="android:layout_height">@dimen/circleImageSize</item>
         <item name="android:layout_margin">@dimen/circleImageMargin</item>
         <item name="android:layout_marginLeft">@dimen/circleImageMarginLeft</item>
-        <item name="app:civ_border_color">@color/imageBorder</item>
-        <item name="app:civ_border_width">@dimen/imageBorder</item>
     </style>
+
     <style name="ListItemText">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -58,5 +57,11 @@
     <!-- End of List Item -->
 
     <!-- Begin of Place List -->
+    <style name="PlaceListStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+    <!-- End of Place List -->
 
 </resources>
