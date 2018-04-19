@@ -26,13 +26,13 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
     @Override
     public Fragment getItem(int position) {
         if (position == 0) {
-            return new ColorsFragment();
+            return new HotelsFragment();
         } else if (position == 1){
-            return new ColorsFragment();
+            return new HotelsFragment();
         } else if (position == 2){
-            return new ColorsFragment();
+            return new HotelsFragment();
         } else {
-            return new ColorsFragment();
+            return new HotelsFragment();
         }
     }
 
