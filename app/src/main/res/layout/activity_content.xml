@@ -29,17 +29,20 @@
 
         <TextView
             android:id="@+id/placeAddress"
-            style="@style/ContentTextViews" />
+            style="@style/ContentAddressTextViews"
+            android:drawableLeft="@drawable/ic_location_on"/>
 
         <LinearLayout style="@style/ContentInfoLinearLayout">
 
             <TextView
                 android:id="@+id/placePhone"
-                style="@style/ContentTextViews" />
+                style="@style/ContentTextViews"
+                android:drawableLeft="@drawable/ic_phone"/>
 
             <TextView
                 android:id="@+id/placeWebsite"
-                style="@style/ContentTextViews" />
+                style="@style/ContentTextViews"
+                android:drawableLeft="@drawable/ic_language"/>
 
         </LinearLayout>
 

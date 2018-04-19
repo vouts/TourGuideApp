@@ -1,8 +1,12 @@
 package com.example.android.tourguideapp;
 
+import android.Manifest;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.ImageView;
@@ -69,7 +73,8 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
         phoneView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent phoneCall = new Intent(Intent.ACTION_CALL, Uri.parse("tel:" + placePhone));
+                Intent phoneCall = new Intent(Intent.ACTION_DIAL, Uri.parse("tel:" + placePhone));
+
                     startActivity(phoneCall);
 
             }
@@ -78,8 +83,8 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
         websiteView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent openWebsite = new Intent(Intent.ACTION_VIEW));
-        openWebsite.setData(Uri.parse(placeWebsite));
+                Intent openWebsite = new Intent(Intent.ACTION_VIEW);
+        openWebsite.setData(Uri.parse("http://" + placeWebsite));
                 startActivity(openWebsite);
 
             }

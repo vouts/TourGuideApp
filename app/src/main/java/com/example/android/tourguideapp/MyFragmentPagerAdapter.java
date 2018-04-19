@@ -13,15 +13,12 @@ import android.text.style.ImageSpan;
  * Provides the appropriate {@link Fragment} for a view pager.
  */
 public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
-    private Context mContext;
+    private Context thisContext;
 
     public MyFragmentPagerAdapter(Context context, FragmentManager fm) {
         super(fm);
-        mContext = context;
+        thisContext = context;
     }
-
-
-
 
     @Override
     public Fragment getItem(int position) {
@@ -48,13 +45,13 @@ public class MyFragmentPagerAdapter extends FragmentPagerAdapter {
 
         Drawable drawable;
         if (position == 0) {
-            drawable = mContext.getResources().getDrawable(R.drawable.hotel);
+            drawable = thisContext.getResources().getDrawable(R.drawable.hotel);
         } else if (position == 1){
-            drawable = mContext.getResources().getDrawable(R.drawable.bar);
+            drawable = thisContext.getResources().getDrawable(R.drawable.bar);
         }  else if (position == 2){
-            drawable = mContext.getResources().getDrawable(R.drawable.food);
+            drawable = thisContext.getResources().getDrawable(R.drawable.food);
         } else {
-            drawable = mContext.getResources().getDrawable(R.drawable.pillar);
+            drawable = thisContext.getResources().getDrawable(R.drawable.pillar);
         }
 
         drawable.setBounds(0, 0, drawable.getIntrinsicWidth(), drawable.getIntrinsicHeight());

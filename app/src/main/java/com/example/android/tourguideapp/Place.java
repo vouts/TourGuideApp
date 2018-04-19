@@ -43,23 +43,23 @@ public class Place {
     private double placeLongitude;
 
     /**
-     *  Image of the place
+     * Image of the place
      */
     private int placeImage = NO_IMAGE_PROVIDED;
 
     /**
      * Create a new Place object.
      *
-     * @param name contains the name of the place
+     * @param name        contains the name of the place
      * @param description contains a small description of the place
-     * @param address contains the address of the place
-     * @param phone contains the phone number of the place
-     * @param website contains the website of the place
-     * @param latitude contains the latitude of the place location
-     * @param longitude contains the longitude of the place location
-     * @param resourceId contains the desired image
+     * @param address     contains the address of the place
+     * @param phone       contains the phone number of the place
+     * @param website     contains the website of the place
+     * @param latitude    contains the latitude of the place location
+     * @param longitude   contains the longitude of the place location
+     * @param resourceId  contains the desired image
      */
-    public Place(String name, String description,String address, String phone, String website, double latitude, double longitude, int resourceId) {
+    public Place(String name, String description, String address, String phone, String website, double latitude, double longitude, int resourceId) {
         placeName = name;
         placeDescription = description;
         placeAddress = address;
@@ -90,12 +90,11 @@ public class Place {
     public String getPlaceDescription() {
         return placeDescription;
     }
+
     /**
      * Get the phone of the place.
      */
-    public String getPlaceAddress() {
-        return placeAddress;
-    }
+    public String getPlaceAddress() { return placeAddress; }
 
     /**
      * Get the phone of the place.

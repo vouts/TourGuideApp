@@ -30,14 +30,19 @@ public class AtractionsFragment extends Fragment {
 
 
         final ArrayList<Place> places = new ArrayList<Place>();
-        //places.add(new Place("red", "weṭeṭṭi",  R.drawable.hotel));
-        //places.add(new Place("green", "chokokki",  R.drawable.hotel));
-        //places.add(new Place("brown", "ṭakaakki",  R.drawable.hotel));
-        //places.add(new Place("gray", "ṭopoppi", R.drawable.hotel));
-        //places.add(new Place("black", "kululli",  R.drawable.hotel));
-        //places.add(new Place("white", "kelelli", R.drawable.acropolis));
-        //places.add(new Place("dusty yellow", "ṭopiisә", R.drawable.hotel));
-        //places.add(new Place("mustard yellow", "chiwiiṭә",  R.drawable.hotel));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
+        places.add(new Place("Flying Coffe Bean", getString(R.string.demoDetails), "Agias Sofias 5", "+302103478588", "vouts.tk", 37.9661, 23.7006, R.drawable.acropolis));
 
         PlaceAdapter itemsAdapter = new PlaceAdapter(getActivity(), places, R.color.mainBG);
 
