@@ -43,8 +43,8 @@ public class Place {
     /**
      * Location of the place
      */
-    double placeLatitude;
-    double placeLongitude;
+    private double placeLatitude;
+    private double placeLongitude;
 
     /**
      *  Image of the place
@@ -54,15 +54,24 @@ public class Place {
     /**
      * Create a new Place object.
      *
-     * @param defaultTranslation is the word in a language that the user is already familiar with
-     *                           (such as English)
-     * @param miwokTranslation   is the word in the Miwok language
-     * @param resourceId         contains the desired image
+     * @param name contains the name of the place
+     * @param description contains a small description of the place
+     * @param address contains the address of the place
+     * @param phone contains the phone number of the place
+     * @param website contains the website of the place
+     * @param latitude contains the latitude of the place location
+     * @param longitude contains the longitude of the place location
+     * @param resourceId contains the desired image
      */
-    public Place(String defaultTranslation, String miwokTranslation, int resourceId) {
-        mDefaultTranslation = defaultTranslation;
-        mMiwokTranslation = miwokTranslation;
-        mImageResourceId = resourceId;
+    public Place(String name, String description,String address, String phone, String website, double latitude, double longitude, int resourceId) {
+        placeName = name;
+        placeDescription = description;
+        placeAddress = address;
+        placePhone = phone;
+        placeWebsite = website;
+        placeLatitude = latitude;
+        placeLongitude = longitude;
+        placeImage = resourceId;
     }
 
     /**
