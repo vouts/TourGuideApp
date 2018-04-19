@@ -5,4 +5,5 @@
     <color name="colorAccent">#0000ff</color>
     <color name="mainBG">#ffffff</color>
     <color name="textColor">#000000</color>
+    <color name="imageBorder">#000000</color>
 </resources>
