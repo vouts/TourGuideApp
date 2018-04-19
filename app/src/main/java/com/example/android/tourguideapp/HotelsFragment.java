@@ -35,7 +35,7 @@ public class HotelsFragment extends Fragment {
         //places.add(new Place("brown", "ṭakaakki",  R.drawable.hotel));
         //places.add(new Place("gray", "ṭopoppi", R.drawable.hotel));
         //places.add(new Place("black", "kululli",  R.drawable.hotel));
-       // places.add(new Place("white", "kelelli", R.drawable.acropolis));
+        //places.add(new Place("white", "kelelli", R.drawable.acropolis));
         //places.add(new Place("dusty yellow", "ṭopiisә", R.drawable.hotel));
         //places.add(new Place("mustard yellow", "chiwiiṭә",  R.drawable.hotel));
 
@@ -61,8 +61,6 @@ public class HotelsFragment extends Fragment {
                 Content.putExtra("Place_Latitude", place.getPlaceLatitude());
                 Content.putExtra("Place_Longitude", place.getPlaceLongitude());
                 Content.putExtra("Place_Image", place.getPlaceImage());
-                //Content.putExtra("Song_Album", songAlbum.getText());
-                //Content.putExtra("Album_Cover", albumCover.getText().toString());
                 startActivity(Content);
 
             }
