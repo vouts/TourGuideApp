@@ -26,7 +26,7 @@ public class HotelsFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.word_list, container, false);
+        View rootView = inflater.inflate(R.layout.place_list, container, false);
 
 
         final ArrayList<Place> places = new ArrayList<Place>();
