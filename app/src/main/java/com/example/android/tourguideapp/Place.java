@@ -34,6 +34,12 @@ public class Place {
      * Small description of the place
      */
     private String placeDescription;
+
+    /**
+     * Address of the place
+     */
+    private String placeAddress;
+
     /**
      * Location of the place
      */
@@ -85,12 +91,25 @@ public class Place {
     public String getPlaceDescription() {
         return placeDescription;
     }
+    /**
+     * Get the phone of the place.
+     */
+    public String getPlaceAddress() {
+        return placeAddress;
+    }
 
     /**
      * Get the phone of the place.
      */
     public String getPlacePhone() {
         return placePhone;
+    }
+
+    /**
+     * Get the phone of the place.
+     */
+    public String getPlaceWebsite() {
+        return placeWebsite;
     }
 
 
