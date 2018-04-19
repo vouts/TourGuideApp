@@ -53,8 +53,10 @@ public class HotelsFragment extends Fragment {
                 Place place = places.get(position);
 
                 Intent Content = new Intent(getActivity(), ContentActivity.class);
-                //Content.putExtra("Song_Name", songName.getText());
-                //Content.putExtra("Song_Artist", songArtist.getText());
+                Content.putExtra("Place_Name", place.getPlaceName());
+                Content.putExtra("Place_Description", place.getPlaceDescription());
+                Content.putExtra("Place_Address", place.getPlaceAddress());
+                Content.putExtra("Place_Phone", place.getPlacePhone());
                 //Content.putExtra("Song_Album", songAlbum.getText());
                 //Content.putExtra("Album_Cover", albumCover.getText().toString());
                 startActivity(Content);

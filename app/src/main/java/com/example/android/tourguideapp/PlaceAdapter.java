@@ -16,13 +16,9 @@ import java.util.ArrayList;
  * Created by Stelios on 4/15/2018.
  */
 
-
-
     public class PlaceAdapter extends ArrayAdapter<Place> {
     private static final String LOG_TAG = PlaceAdapter.class.getSimpleName();
 
-    /** Resource ID for the background color for this list of words */
-    private int mColorResourceId;
 
 
     /**
@@ -39,7 +35,6 @@ import java.util.ArrayList;
         // Because this is a custom adapter for two TextViews and an ImageView, the adapter is not
         // going to use this second argument, so it can be any value. Here, we used 0.
         super(context, 0, places);
-        mColorResourceId = color;
     }
 
     @NonNull
@@ -59,14 +54,14 @@ import java.util.ArrayList;
         TextView numberTextView = (TextView) listItemView.findViewById(R.id.default_text_view);
         // Get the version number from the current word object and
         // set this text on the number TextView
-        numberTextView.setText(currentPlace.getDefaultTranslation());
+        numberTextView.setText(currentPlace.getPlaceName());
 
         // Find the ImageView in the list_item.xml layout with the ID list_item_icon
         ImageView iconView = (ImageView) listItemView.findViewById(R.id.image);
         // Check if an image is provided for this word or not
         if (currentPlace.hasImage()) {
             // If an image is available, display the provided image based on the resource ID
-            iconView.setImageResource(currentPlace.getMiwokImage());
+            iconView.setImageResource(currentPlace.getPlaceImage());
             // Make sure the view is visible
             iconView.setVisibility(View.VISIBLE);
         } else {
