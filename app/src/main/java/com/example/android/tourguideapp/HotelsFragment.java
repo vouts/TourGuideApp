@@ -41,7 +41,7 @@ public class HotelsFragment extends Fragment {
 
         PlaceAdapter itemsAdapter = new PlaceAdapter(getActivity(), places, R.color.mainBG);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        ListView listView = rootView.findViewById(R.id.list);
 
         listView.setAdapter(itemsAdapter);
 
@@ -68,14 +68,6 @@ public class HotelsFragment extends Fragment {
         });
 
         return rootView;
-    }
-
-    @Override
-    public void onStop() {
-        super.onStop();
-        // When the activity is stopped, release the media player resources because we won't
-        // be playing any more sounds.
-
     }
 
 }
