@@ -72,11 +72,13 @@
         <item name="android:layout_marginRight">@dimen/contentContainerMarginSides</item>
         <item name="android:layout_marginTop">@dimen/contentContainerMarginTop</item>
     </style>
+
     <style name="ContentMainLinearLayout">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:orientation">vertical</item>
     </style>
+
     <style name="MapsFragment">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">@dimen/mapHeight</item>
@@ -92,6 +94,23 @@
         <item name="android:layout_marginTop">@dimen/contentTitleMarginTop</item>
         <item name="android:textColor">@color/textColor</item>
         <item name="android:textSize">@dimen/contentTitleTextSize</item>
+    </style>
+
+    <style name="ContentImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxHeight">@dimen/contentImageMaxHeight</item>
+        <item name="android:layout_marginTop">@dimen/contentImageMarginTop</item>
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="ContentContainerDescription">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">@dimen/contentDescriptionMarginTop</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/contentTextSize</item>
     </style>
 
 </resources>

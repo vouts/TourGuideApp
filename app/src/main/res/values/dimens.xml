@@ -12,4 +12,8 @@
     <dimen name="mapMarginTop">10dp</dimen>
     <dimen name="contentTitleMarginTop">10dp</dimen>
     <dimen name="contentTitleTextSize">24sp</dimen>
+    <dimen name="contentImageMarginTop">10dp</dimen>
+    <dimen name="contentImageMaxHeight">200dp</dimen>
+    <dimen name="contentDescriptionMarginTop">10dp</dimen>
+    <dimen name="contentTextSize">18sp</dimen>
 </resources>

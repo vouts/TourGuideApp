@@ -2,13 +2,12 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:map="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:name="com.google.android.gms.maps.SupportMapFragment"
     android:id="@+id/contentWrapper"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
     style="@style/ContentContainer"
     tools:context=".ContentActivity">
 
-    <LinearLayout
-        style="@style/ContentMainLinearLayout">
+    <LinearLayout style="@style/ContentMainLinearLayout">
 
         <fragment
             android:id="@+id/map"
@@ -23,22 +22,13 @@
 
         <ImageView
             android:id="@+id/placeImage"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:adjustViewBounds="true"
-            android:maxHeight="200dp"
+            style="@style/ContentImage"
             android:src="@drawable/acropolis" />
 
         <TextView
-            android:id="@+id/placeDetails"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:gravity="center_horizontal"
-            android:text="@string/demoDetails"
-            android:textColor="@color/textColor"
-            android:textSize="18sp" />
+            android:id="@+id/placeDescription"
+            style="@style/ContentContainerDescription"
+            android:text="@string/demoDetails" />
 
         <TextView
             android:id="@+id/placeAddress"
