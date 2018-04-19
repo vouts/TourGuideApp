@@ -17,8 +17,7 @@
         android:layout_marginLeft="5dp"
         android:contentDescription="@string/app_name"
         app:civ_border_color="#000000"
-        app:civ_border_width="1dp"
-        tools:src="@drawable/cat1" />
+        app:civ_border_width="1dp" />
 
     <TextView
         android:id="@+id/default_text_view"
