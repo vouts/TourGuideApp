@@ -51,12 +51,6 @@ public class Place {
      */
     private int placeImage = NO_IMAGE_PROVIDED;
 
-
-
-
-
-
-
     /**
      * Create a new Place object.
      *
@@ -112,6 +106,19 @@ public class Place {
         return placeWebsite;
     }
 
+    /**
+     * Get the Latitude of the place.
+     */
+    public double getPlaceLatitude() {
+        return placeLatitude;
+    }
+
+    /**
+     * Get the Longitude of the place.
+     */
+    public double getPlaceLongitude() {
+        return placeLongitude;
+    }
 
     /**
      * Get the Miwok image.
@@ -119,8 +126,6 @@ public class Place {
     public int getPlaceImage() {
         return placeImage;
     }
-
-
 
 }
 
