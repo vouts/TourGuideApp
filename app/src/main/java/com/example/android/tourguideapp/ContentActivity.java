@@ -1,5 +1,6 @@
 package com.example.android.tourguideapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 
@@ -16,7 +17,6 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
     private String placeName, placeDescription, placeAddress, placePhone, placeWebsite;
     private double placeLatitude, placeLongitude;
     private int placeImage;
-    private boolean placeHasImage;
 
     private LatLng location(double latitude, double longitude) {
         LatLng location = new LatLng(latitude, longitude);
@@ -26,6 +26,17 @@ public class ContentActivity extends AppCompatActivity implements OnMapReadyCall
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        Intent intent = getIntent();
+        placeName = intent.getStringExtra("Place_Name");
+        placeDescription = intent.getStringExtra("Place_Description");
+        placeAddress = intent.getStringExtra("Place_Address");
+        placePhone = intent.getStringExtra("Place_Phone");
+        placeWebsite = intent.getStringExtra("Place_Website");
+        placeLatitude = intent.getDoubleExtra("Place_Latitude",37.9715323);
+        placeLongitude = intent.getDoubleExtra("Place_Longitude", 23.7257492);
+        placeImage = intent.getIntExtra("Place_Image", R.drawable.acropolis);
+
         setContentView(R.layout.activity_content);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
