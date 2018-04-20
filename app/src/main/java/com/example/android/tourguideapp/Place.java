@@ -125,7 +125,7 @@ public class Place {
     }
 
     /**
-     * Get the Miwok image.
+     * Get the place image.
      */
     public int getPlaceImage() {
         return placeImage;
